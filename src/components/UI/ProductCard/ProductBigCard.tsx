@@ -2,6 +2,7 @@ import * as React from "react";
 import { IProduct } from "../../data/models";
 import { ReactComponent as LIKED } from "../../../assets/icons/likedbigicon.svg";
 import { ReactComponent as LIKE } from "../../../assets/icons/likebigicon.svg";
+import { ReactComponent as ZOOMICON } from "../../../assets/icons/zoomicon.svg";
 import { dispatch } from "../../../index";
 import ReactImageMagnify from "react-image-magnify";
 import {
@@ -61,6 +62,7 @@ export const ProductBigCard = ({ product }: ProductProps) => {
               },
             }}
           />
+          <ZOOMICON style={{ marginTop: "10px", marginLeft: "180px" }} />
         </CardActionArea>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
